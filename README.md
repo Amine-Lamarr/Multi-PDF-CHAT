@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>PDFChat - README</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #f4f4f4; }
-        h1, h2 { color: #333; }
-        pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
-        code { background: #ddd; padding: 2px 5px; border-radius: 3px; }
-        a { color: #0077cc; text-decoration: none; }
-    </style>
-</head>
-<body>
-
-<h1>PDFChat</h1>
+<h1 style="color: cyan">PDFChat</h1>
 
 <p><strong>PDFChat</strong> is a Streamlit-based AI chatbot that allows you to upload multiple PDF files and ask questions about their content. 
 It uses LangChain, HuggingFace embeddings, and OpenAI models to process, embed, and retrieve answers from your documents.</p>
