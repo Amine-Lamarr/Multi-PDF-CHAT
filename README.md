@@ -10,11 +10,8 @@ It uses LangChain, HuggingFace embeddings, and OpenAI models to process, embed, 
     <li>Embeds the text using HuggingFace sentence-transformers.</li>
     <li>Creates a conversational AI that answers your questions based on the uploaded PDFs.</li>
     <li>Supports conversation memory to keep chat context.</li>
+    <li>create a streamlit interface.</li>
 </ul>
-
-<h2>Installation</h2>
-<p>Make sure you have Python 3.10+ installed. Then install the required packages:</p>
-<pre><code>pip install -r requirements.txt</code></pre>
 
 <h2>Usage</h2>
 <ol>
@@ -26,10 +23,10 @@ It uses LangChain, HuggingFace embeddings, and OpenAI models to process, embed, 
 </ol>
 
 <h2>Example</h2>
-<p>Upload a PDF about "Eminem" and one about "Morocco", then ask questions like:</p>
+<p>Upload a PDF about "Eminem" and one about "USA", then ask questions like:</p>
 <ul>
     <li>"What is this PDF about?"</li>
-    <li>"Tell me about Morocco's capital."</li>
+    <li>"Tell me about America's capital."</li>
     <li>"Who won an Academy Award for 'Lose Yourself'?"</li>
 </ul>
 
