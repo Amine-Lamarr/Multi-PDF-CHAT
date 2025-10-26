@@ -2,7 +2,8 @@ import streamlit as st
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain_text_splitters import CharacterTextSplitter
-from langchain.vectorstores import FAISS
+# from langchain.vectorstores import FAISS
+from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceBgeEmbeddings
 from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
@@ -31,7 +32,7 @@ def get_text_chunks(text):
  
 def get_vectorstore(chunks):
     embeddings = HuggingFaceBgeEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    vectorstore = FAISS.from_texts(chunks, embeddings)
+    vectorstore = Chroma.from_texts(chunks, embeddings)
     return vectorstore
 
 def get_conversation_chain(vectorstore):
