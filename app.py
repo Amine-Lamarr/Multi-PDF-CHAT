@@ -10,6 +10,8 @@ from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
 import os
 
+load_dotenv()
+
 def get_pdf_text(pdfs):
     text = ""
     for pdf in pdfs:
