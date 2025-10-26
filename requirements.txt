@@ -1,7 +1,9 @@
 streamlit
 python-dotenv
 PyPDF2
-langchain
+langchain==0.2.11
+langchain-community==0.2.11
+langchain-core==0.2.11
 faiss-cpu
 sentence-transformers
 transformers
